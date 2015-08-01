@@ -1,0 +1,7 @@
+$base-font-size: 16px;
+$base-line-height: 22px;
+
+@include font-face('PT-Sans', font-files('PT-Sans.ttf'));
+@include font-face('Roboto', font-files('Roboto-Regular.ttf'));
+$pt-sans  : 'PT-Sans', Helvetica, Arial, sans-serif;
+$roboto   : 'Roboto', Helvetica, Arial, sans-serif;

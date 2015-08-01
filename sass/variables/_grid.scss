@@ -1,0 +1,15 @@
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+$horz-spacing-unit: 1rem;
+
+$sm: 768px;
+$md: 960px;
+
+$susy: (
+  columns: 12,
+  container: 75rem,
+  debug: (
+    image: hide,
+    toggle: top right,
+  )
+);

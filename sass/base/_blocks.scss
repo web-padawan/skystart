@@ -1,0 +1,20 @@
+%alert-box {
+  padding: 1rem;
+  margin-bottom: $vert-spacing-unit / 2;
+  border: 1px solid transparent;
+  @include border-radius(4px);
+}
+
+.alert-info {
+  @extend %alert-box;
+  color: darken($blue, 25%);
+  background-color: lighten($light-blue, 40%);
+  border-color: $blue;
+}
+
+.alert-error {
+  @extend %alert-box;
+  color: darken($red, 25%);
+  background-color: lighten($deep-orange, 30%);
+  border-color: $red;
+}
