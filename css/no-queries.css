@@ -514,3 +514,45 @@ h5,
 h6 {
   margin: 0;
 }
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
+h5 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
