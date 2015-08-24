@@ -435,10 +435,6 @@ html {
   font-family: "PT-Sans";
   src: url('../fonts/PT-Sans.ttf?1437717051') format('truetype');
 }
-@font-face {
-  font-family: "Roboto";
-  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
-}
 input[type="text"],
 input[type="password"],
 input[type="search"], textarea {

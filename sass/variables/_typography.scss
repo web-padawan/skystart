@@ -7,6 +7,4 @@ $rem-with-px-fallback: true;
 @include establish-baseline;
 
 @include font-face('PT-Sans', font-files('PT-Sans.ttf'));
-@include font-face('Roboto', font-files('Roboto-Regular.ttf'));
-$pt-sans  : 'PT-Sans', Helvetica, Arial, sans-serif;
-$roboto   : 'Roboto', Helvetica, Arial, sans-serif;
+$pt-sans : 'PT-Sans', Helvetica, Arial, sans-serif;
