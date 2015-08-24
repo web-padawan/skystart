@@ -434,66 +434,20 @@ video {
   font-family: "Roboto";
   src: url('../fonts/Roboto-Regular.ttf?315435600') format('truetype');
 }
-.alert-info, .alert-error {
-  padding: 1rem;
-  margin-bottom: 10px;
-  border: 1px solid transparent;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.alert-info {
-  color: #08528d;
-  background-color: #c5ecfe;
-  border-color: #2196F3;
-}
-
-.alert-error {
-  color: #a21309;
-  background-color: #ffcbbb;
-  border-color: #F44336;
-}
-
 input[type="text"],
 input[type="password"],
 input[type="search"], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #FFF;
-  border-width: 1px;
-  border-color: #d1d1d1;
-  box-shadow: inset 0 1px 2px #9E9E9E;
-  color: #1a1a1a;
-  display: block;
-  font-size: 0.9rem;
-  padding: 0.4rem;
-}
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus, textarea:focus {
-  outline: none;
-  border-color: #ababab;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="search"] {
-  height: 2rem;
-}
 input[type="text"]:-webkit-autofill,
 input[type="password"]:-webkit-autofill,
 input[type="search"]:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 100px #FFF inset;
-}
-
-input[type="file"]:focus {
-  outline: none;
-  border-color: #ababab;
+  -webkit-box-shadow: 0 0 0 100px #fff inset;
 }
 
 textarea {
-  min-height: 50px;
   border-style: inset;
   height: auto;
   resize: none;
@@ -502,19 +456,10 @@ textarea {
 button[type="submit"],
 input[type="submit"] {
   border-style: solid;
-  border-width: 0px;
+  border-width: 0;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: #00a5bb;
-  color: #FFF;
-  outline: none;
-}
-button[type="submit"]:hover,
-input[type="submit"]:hover {
-  background-color: #008fa1;
 }
 
 img, media {
@@ -534,19 +479,19 @@ html {
 
 a {
   text-decoration: none;
-  color: #00BCD4;
+  color: #00bcd4;
 }
 a:visited {
-  color: #00BCD4;
+  color: #00bcd4;
 }
 a:focus {
-  color: #F44336;
+  color: #f44336;
 }
 a:hover {
   color: #008fa1;
 }
 a:active {
-  color: #F44336;
+  color: #f44336;
 }
 
 label {
