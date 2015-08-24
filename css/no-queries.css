@@ -426,13 +426,18 @@ video {
   height: auto;
 }
 
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
 @font-face {
   font-family: "PT-Sans";
   src: url('../fonts/PT-Sans.ttf?1437717051') format('truetype');
 }
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto-Regular.ttf?315435600') format('truetype');
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
 input[type="text"],
 input[type="password"],
@@ -470,7 +475,7 @@ img, media {
 
 table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 html {
@@ -478,8 +483,8 @@ html {
 }
 
 a {
-  text-decoration: none;
   color: #00bcd4;
+  text-decoration: none;
 }
 a:visited {
   color: #00bcd4;
@@ -493,9 +498,16 @@ a:hover {
 a:active {
   color: #f44336;
 }
+a:hover, a:focus {
+  text-decoration: underline;
+}
 
 label {
   display: block;
+}
+
+ul {
+  margin: 0;
 }
 
 h1,
@@ -504,8 +516,5 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.275em;
+  margin: 0;
 }

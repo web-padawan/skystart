@@ -1,5 +1,10 @@
 $base-font-size: 16px;
-$base-line-height: 22px;
+$base-line-height: 24px;
+
+$rhythm-unit: "rem";
+$rem-with-px-fallback: true;
+
+@include establish-baseline;
 
 @include font-face('PT-Sans', font-files('PT-Sans.ttf'));
 @include font-face('Roboto', font-files('Roboto-Regular.ttf'));
