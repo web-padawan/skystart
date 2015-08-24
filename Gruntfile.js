@@ -13,11 +13,6 @@ module.exports = function (grunt) {
         options: {
           environment: 'development'
         }
-      },
-      dist: {
-        options: {
-          environment: 'production'
-        }
       }
     },
 
@@ -26,6 +21,31 @@ module.exports = function (grunt) {
         files: {
           'js/lib/modernizr.min.js': 'bower_components/modernizr/modernizr.js',
         }
+      }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'css',
+          ext: '.min.css'
+        }]
+      }
+    },
+
+    watch: {
+      options: {
+        livereload: true
+      },
+      css: {
+        files: '**/*.scss',
+        tasks: ['compile']
+      },
+      html: {
+        files: ['**/*.html']
       }
     },
 
@@ -51,7 +71,7 @@ module.exports = function (grunt) {
           port: 9001,
           hostname: 'localhost',
           base: '.',
-          keepalive: true,
+          livereload: true,
           open: {
             target: 'http://localhost:9001'
           }
@@ -62,11 +82,12 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('compile', ['compass:dev', ]);
-  grunt.registerTask('dist', ['compass:dist', ]);
-  grunt.registerTask('default', ['uglify:init', 'copy:init', 'connect']);
+  grunt.registerTask('compile', ['compass:dev', 'cssmin']);
+  grunt.registerTask('default', ['uglify:init', 'copy:init', 'connect', 'watch']);
 };
