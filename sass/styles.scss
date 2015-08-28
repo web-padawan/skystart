@@ -1,4 +1,4 @@
-// Import external libraries.
+// Import compass and extensions.
 @import "compass";
 @import "normalize";
 @import "toolkit/kickstart";
@@ -9,6 +9,9 @@
 
 // Import compass features.
 @import "compass/layout";
+
+// Import libraries.
+@import "lib/**/*";
 
 // Import variables, base styles and components using globbing.
 @import "variables/**/*";
