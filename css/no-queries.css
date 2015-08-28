@@ -556,3 +556,39 @@ h6 {
   line-height: 24px;
   line-height: 1.5rem;
 }
+
+.social__vk {
+  background: url('../images/generated/icons-sa1d02914cf.png') 0 -370px no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.social__fb {
+  background: url('../images/generated/icons-sa1d02914cf.png') 0 0 no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.social__tw {
+  background: url('../images/generated/icons-sa1d02914cf.png') 0 -296px no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.social__gp {
+  background: url('../images/generated/icons-sa1d02914cf.png') 0 -74px no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.social__in {
+  background: url('../images/generated/icons-sa1d02914cf.png') 0 -148px no-repeat;
+  width: 64px;
+  height: 64px;
+}
+
+.social__rss {
+  background: url('../images/generated/icons-sa1d02914cf.png') 0 -222px no-repeat;
+  width: 64px;
+  height: 64px;
+}
