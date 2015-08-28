@@ -37,7 +37,7 @@ HTML boilerplate with a lot of useful things.
 
 In command line, enter the project directory and run following commands:
 
-* gem imstall bundler
+* gem install bundler
 * bundle install
 * npm install -g bower grunt grunt-cli gulp
 * npm install
