@@ -35,10 +35,12 @@ HTML boilerplate with a lot of useful things.
 
 ### Process
 
-* enter the project directory and run following commands:
-* **gem imstall bundler**
-* *bundle install*
-* **npm install**
-* **bower install**
+In command line, enter the project directory and run following commands:
+
+* gem imstall bundler
+* bundle install
+* npm install -g bower grunt grunt-cli gulp
+* npm install
+* bower install
 
 That's it! Now you can use Grunt or Gulp for compiling stylesheets (**compile** task) and more.
