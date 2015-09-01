@@ -458,9 +458,12 @@ button[type="submit"],
 input[type="submit"] {
   border-style: solid;
   border-width: 0;
-  cursor: pointer;
   text-decoration: none;
   text-align: center;
+}
+
+ul {
+  margin: 0;
 }
 
 img, media {
@@ -500,10 +503,6 @@ a:hover, a:focus {
 
 label {
   display: block;
-}
-
-ul {
-  margin: 0;
 }
 
 h1,
