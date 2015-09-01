@@ -57,10 +57,13 @@ module.exports = function (grunt) {
             dest: 'js/lib/jquery.min.js'
           },
           {
+            src: 'bower_components/respond/dest/respond.min.js',
+            dest: 'js/lib/respond.min.js'
+          },
+          {
             src: 'bower_components/REM-unit-polyfill/js/rem.min.js',
             dest: 'js/lib/rem.min.js'
           }
-
         ]
       }
     },
