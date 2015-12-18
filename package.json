@@ -3,7 +3,8 @@
   "description": "HTML5 boilerplate with Sass and Compass",
   "version": "0.0.1",
   "dependencies": {},
-  "license": "(MIT OR Apache-2.0)",
+  "license": "MIT",
+  "author": "Sergey Kulikov",
   "repository": "htpps://github.com/web-padawan/sky-starter-kit",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
