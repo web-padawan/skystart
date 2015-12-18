@@ -21,7 +21,6 @@ HTML boilerplate with a lot of useful things.
 ### Additional utilities
 * [normalize.scss](https://github.com/appleboy/normalize.scss) - SCSS version of [normalize.css](https://github.com/necolas/normalize.css)
 * [Toolkit](https://github.com/at-import/toolkit) - presets for responsive web design and progressive enhancement with Compass
-* [Sassy Buttons](http://jaredhardy.com/sassy-buttons) - cross-browser compatible buttons
 * [REM unit polyfill](https://github.com/chuckcarpenter/REM-unit-polyfill) - JavaScript polyfill for **rem** unit support in older browsers
 
 ##2. Installation

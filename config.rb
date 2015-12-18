@@ -15,12 +15,10 @@ javascripts_dir = "js"
 fonts_dir = "fonts"
 
 # Require any additional compass plugins installed on your system.
-require 'rgbapng'
 require 'toolkit'
 require 'breakpoint'
 require 'susy'
 require 'sass-globbing'
-require 'sassy-buttons'
 add_import_path "bower_components/normalize-scss"
 
 # Select output style (:expanded, :nested, :compact, :compressed).
