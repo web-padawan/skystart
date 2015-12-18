@@ -10,7 +10,6 @@ group :development do
   gem 'breakpoint'              # Manages CSS media queries.
 
   # Additional features and utilities.
-  gem 'toolkit'                 # Useful Compass presets pack.
   gem 'compass-validator'       # So you can `compass validate`.
   gem 'oily_png'                # Faster Compass sprite generation.
   gem 'css_parser'              # Helps `compass stats` output statistics.
