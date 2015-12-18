@@ -1,17 +1,13 @@
 // Import compass and extensions.
 @import "compass";
-@import "normalize";
-@import "toolkit/kickstart";
 @import "susy";
 @import "breakpoint";
 
-// Import compass features.
-@import "compass/layout";
-
-// Import libraries.
+// Import helpers.
 // @import "helpers/sprites";
+@import "helpers/optimize";
 
-// Import variables, base styles and components using globbing.
+// Import variables, base styles and blocks using globbing.
 @import "variables/**/*";
 @import "base/**/*";
 @import "blocks/**/*";

@@ -1,0 +1,13 @@
+// regular
+@include font-face('OpenSans', font-files('OpenSans.woff', woff, 'OpenSans.ttf', ttf), 'OpenSans.eot');
+
+// bold
+@include font-face('OpenSans', font-files('OpenSans-Bold.woff', woff, 'OpenSans-Bold.ttf', ttf), 'OpenSans-Bold.eot', bold, normal);
+
+// italic
+@include font-face('OpenSans', font-files('OpenSans-Italic.woff', woff, 'OpenSans-Italic.ttf', ttf), 'OpenSans-Italic.eot', normal, italic);
+
+// bold + italic
+@include font-face('OpenSans', font-files('OpenSans-BoldItalic.woff', woff, 'OpenSans-BoldItalic.ttf', ttf), 'OpenSans-BoldItalic.eot', bold, italic);
+
+$open-sans: 'OpenSans', Helvetica, Arial, sans-serif;

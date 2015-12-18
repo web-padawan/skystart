@@ -1,0 +1,267 @@
+// Reset CSS
+
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+// HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, footer,
+header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+// Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+// Prevent modern browsers from displaying `audio` without controls.
+// Remove excess height in iOS 5 devices.
+audio:not([controls]) {
+  display: none; // Chrome 44-, iOS 8+, Safari 9+
+}
+
+// Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+// Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+b,
+strong {
+  font-weight: bold;
+}
+
+// Address styling not present in Safari and Chrome.
+dfn {
+  font-style: italic;
+}
+
+// Address styling not present in IE 8/9.
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+// Address inconsistent and variable font size in all browsers.
+small {
+  font-size: 80%;
+}
+
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+// Remove border when inside `a` element in IE 8/9/10.
+// Improve image quality when scaled in IE 7.
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+// Correct overflow not hidden in IE 9/10/11.
+svg:not(:root) {
+  overflow: hidden;
+}
+
+// Address differences between Firefox and other browsers.
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+// Address odd `em`-unit font size rendering in all browsers.
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+// Improve readability of pre-formatted text in all browsers.
+pre {
+  overflow: auto;
+  tab-size: 4;
+  white-space: pre-wrap;
+}
+
+button {
+  overflow: visible; // IE 8/9/10/11.
+  -webkit-appearance: button; // iOS
+  cursor: pointer;
+  text-transform: none; // Firefox, IE 8/9/10/11, and Opera.
+
+  // Remove inner padding and border in Firefox 4+.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+select {
+  text-transform: none; // Firefox
+}
+
+input {
+  line-height: normal; // Firefox 4+
+
+  -webkit-border-radius: 0; // iOS 8+
+
+  user-select: text; // allow user select
+
+  &[type="button"], &[type="reset"], &[type="submit"] {
+    -webkit-appearance: button; // iOS 8+
+    cursor: pointer;
+  }
+
+  &[type="number"] {
+    width: auto; // Firefox 36+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      height: auto; // Chrome
+    }
+  }
+
+  &[type="search"] {
+    -webkit-appearance: textfield; // Chrome 45+, Safari 9+
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      -webkit-appearance: none; // Chrome 45+, Safari 9+
+    }
+  }
+
+  // Remove inner padding and border in Firefox 4+.
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+// Re-set default cursor for disabled elements.
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+// Remove `border-radius` and `box-shadow` in iOS.
+input, select, textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+// Remove default vertical scrollbar in IE 8/9/10/11.
+// Disable resize.
+// Allow user select.
+textarea {
+  overflow: auto;
+  resize: none;
+  user-select: text;
+}
+
+// Reset unusual Firefox-on-Android default style.
+button, input, select[multiple], textarea {
+  background-image: none;
+}
+
+// Hide placeholder on focus.
+[placeholder]:focus::placeholder {
+  color: transparent;
+}
+
+// Don't inherit the `font-weight` (applied by a rule above).
+optgroup {
+  font-weight: bold;
+}
+
+// Remove most spacing between table cells.
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+// Address `[hidden]` styling not present in IE 8/9.
+// Hide the `template` element in IE, Safari, and Firefox < 22.
+[hidden], template {
+  display: none;
+}
+
+// Remove the gray background color from active links in IE 10.
+a {
+  background: transparent;
+}
+
+// Specify the progress cursor of updating elements.
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+// SSpecify the pointer cursor of trigger elements.
+[aria-controls] {
+  cursor: pointer;
+}
+
+// Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements.
+[aria-disabled] {
+  cursor: default;
+}
