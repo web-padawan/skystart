@@ -25,19 +25,16 @@ gulp.task('sass', function() {
       config_file: './config.rb',
       bundle_exec: true
     }))
-    .pipe(gulp.dest('css'))
-    .pipe(gulp.dest('css'))
     .pipe(postcss([ autoprefixer({ browsers: ['IE >= 9'] }) ]))
     .pipe(gulp.dest('css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({stream:true}));
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task('watch', function() {
   gulp.watch('sass/**/*.scss', ['sass']);
-  gulp.watch(['index.html', 'js/*', 'images/*'], ['reload']);
+  gulp.watch(['index.html', 'css/styles.css', 'js/*', 'images/*'], ['reload']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
