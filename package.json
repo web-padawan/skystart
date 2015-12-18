@@ -7,7 +7,6 @@
   "repository": "htpps://github.com/web-padawan/sky-starter-kit",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
-    "bower": "^1.4.1",
     "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
     "gulp-compass": "^2.1.0",
