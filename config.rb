@@ -15,7 +15,6 @@ javascripts_dir = "js"
 fonts_dir = "fonts"
 
 # Require any additional compass plugins installed on your system.
-require 'toolkit'
 require 'breakpoint'
 require 'susy'
 require 'sass-globbing'
