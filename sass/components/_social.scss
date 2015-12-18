@@ -1,5 +1,0 @@
-@each $s in vk, fb, tw, gp, in, rss {
-  .social__#{$s} {
-    @include s(#{$s});
-  }
-}
