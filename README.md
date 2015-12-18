@@ -15,8 +15,7 @@ HTML boilerplate with a lot of useful things.
 * [Modernizr](http://modernizr.com) - JavaScript library that detects HTML5 and CSS3 features in the user’s browser
 
 ### Tools
-* [Grunt.js](http://gruntjs.com) - JavaScript task runner, with sample config for compiling stylesheets, livereload etc.
-* [Gulp.js](http://gulpjs.com) - an alternative to Grunt.js
+* [Gulp.js](http://gulpjs.com) - task runner, with sample config for compiling stylesheets, livereload etc.
 * [Bower](http://bower.io) - front-end package manager
 
 ### Additional utilities
@@ -39,8 +38,9 @@ In command line, enter the project directory and run following commands:
 
 * gem install bundler
 * bundle install
-* npm install -g bower grunt grunt-cli gulp
-* npm install
+* npm i -g bower gulp
+* npm i
 * bower install
+* gulp
 
-That's it! Now you can use Grunt or Gulp for compiling stylesheets (**compile** task) and more.
+Enjoy!
