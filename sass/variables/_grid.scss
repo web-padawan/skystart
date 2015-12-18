@@ -7,8 +7,12 @@ $md: 960px;
 
 $susy: (
   columns: 12,
-  container: 75rem,
+  container: 1280px,
   debug: (
-    image: hide,
+    // image: show,
   )
 );
+
+%container {
+  @include container;
+}

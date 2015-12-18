@@ -1,0 +1,8 @@
+.header {
+  @include padding-leader;
+  @include padding-trailer;
+
+  &__container {
+    @extend %container;
+  }
+}

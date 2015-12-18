@@ -252,6 +252,17 @@ a {
   font-weight: bold;
   font-style: italic;
 }
+.footer__container, .header__container, .main__container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__container:after, .header__container:after, .main__container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 html {
   font-size: 100%;
   line-height: 1.5em;
@@ -351,4 +362,17 @@ h6 {
   line-height: 1.5rem;
 }
 
-/* No files to import found in blocks/**\/* */
+.footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.main {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
