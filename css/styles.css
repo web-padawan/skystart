@@ -284,15 +284,6 @@ input[type="search"]:-webkit-autofill {
 textarea {
   border-style: inset;
   height: auto;
-  resize: none;
-}
-
-button[type="submit"],
-input[type="submit"] {
-  border-style: solid;
-  border-width: 0;
-  text-decoration: none;
-  text-align: center;
 }
 
 html {
@@ -317,19 +308,6 @@ a:active {
 }
 a:hover, a:focus {
   text-decoration: underline;
-}
-
-label {
-  display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
 }
 
 h1 {

@@ -16,13 +16,4 @@ textarea {
   @extend %form-element;
   border-style: inset;
   height: auto;
-  resize: none;
-}
-
-button[type="submit"],
-input[type="submit"] {
-  border-style: solid;
-  border-width: 0;
-  text-decoration: none;
-  text-align: center;
 }
