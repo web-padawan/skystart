@@ -25,5 +25,8 @@ output_style = (environment == :production) ? :compressed : :expanded
 # Enable relative paths to assets via compass helper functions.
 relative_assets = true
 
+# Disable cache busting on image assets
+asset_cache_buster :none
+
 # Disable output line comments in CSS.
 line_comments = false
