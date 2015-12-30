@@ -1,11 +1,11 @@
 {
-  "name": "sky-starter-kit",
-  "description": "HTML5 boilerplate with Sass and Compass",
+  "name": "skystart",
+  "description": "Frontend project template",
   "version": "0.0.1",
   "dependencies": {},
   "license": "MIT",
   "author": "Sergey Kulikov",
-  "repository": "htpps://github.com/web-padawan/sky-starter-kit",
+  "repository": "htpps://github.com/web-padawan/skystart",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
     "browser-sync": "^2.10.1",
