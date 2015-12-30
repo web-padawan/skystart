@@ -169,6 +169,10 @@ input {
     cursor: pointer;
   }
 
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #fff inset;
+  }
+
   &[type="number"] {
     width: auto; // Firefox 36+
     &::-webkit-inner-spin-button,

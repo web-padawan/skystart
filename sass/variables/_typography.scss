@@ -1,7 +1,50 @@
+// Font family
+html {
+  font-family: $open-sans;
+}
+
+// Vertical rhythm
 $base-font-size: 16px;
 $base-line-height: 24px;
 
-$rhythm-unit: "rem";
+$rhythm-unit: 'rem';
 $rem-with-px-fallback: false;
 
 @include establish-baseline;
+
+// Headings
+h1 {
+  @include adjust-font-size-to(32px);
+  @include trailer;
+}
+
+h2 {
+  @include adjust-font-size-to(28px);
+  @include trailer;
+}
+
+h3 {
+  @include adjust-font-size-to(24px);
+  @include trailer;
+}
+
+h4 {
+  @include adjust-font-size-to(20px);
+  @include trailer;
+}
+
+h5 {
+  @include adjust-font-size-to(18px);
+  @include trailer;
+}
+
+h6 {
+  @include adjust-font-size-to(16px);
+  @include trailer;
+}
+
+// Links
+a {
+  @include link-colors($cyan, darken($cyan, 10%), $red, $cyan, $red);
+  @include hover-link;
+}

@@ -146,6 +146,9 @@ input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #fff inset;
+}
 input[type="number"] {
   width: auto;
 }
@@ -264,30 +267,48 @@ a {
 }
 
 html {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+}
+
+html {
   font-size: 100%;
   line-height: 1.5em;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="search"], textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+h1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-input[type="text"]:-webkit-autofill,
-input[type="password"]:-webkit-autofill,
-input[type="search"]:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 100px #fff inset;
+h2 {
+  font-size: 1.75rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-textarea {
-  border-style: inset;
-  height: auto;
+h3 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
-html {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 a {
@@ -308,36 +329,6 @@ a:active {
 }
 a:hover, a:focus {
   text-decoration: underline;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-h2 {
-  font-size: 1.75rem;
-  line-height: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 3rem;
-}
-
-h4 {
-  font-size: 1.375rem;
-  line-height: 3rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-h6 {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
 }
 
 .footer {

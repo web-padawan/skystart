@@ -7,7 +7,6 @@
 // @import "helpers/sprites";
 @import "helpers/optimize";
 
-// Import variables, base styles and blocks using globbing.
+// Import variable and blocks using globbing.
 @import "variables/**/*";
-@import "base/**/*";
 @import "blocks/**/*";
