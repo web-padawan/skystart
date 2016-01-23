@@ -5,4 +5,28 @@
   &__container {
     @extend %container;
   }
+
+  &__copyright {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__icon {
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--email {
+      @include sprite($s-email);
+    }
+
+    &--github {
+      @include sprite($s-github);
+    }
+  }
 }

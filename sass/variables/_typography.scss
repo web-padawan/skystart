@@ -42,9 +42,3 @@ h6 {
   @include adjust-font-size-to(16px);
   @include trailer;
 }
-
-// Links
-a {
-  @include link-colors($cyan, darken($cyan, 10%), $red, $cyan, $red);
-  @include hover-link;
-}
