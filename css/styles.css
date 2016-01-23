@@ -127,6 +127,7 @@ button {
   cursor: pointer;
   text-transform: none;
 }
+
 button::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -142,25 +143,32 @@ input {
   -ms-user-select: text;
       user-select: text;
 }
+
 input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
+
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 100px #fff inset;
 }
+
 input[type="number"] {
   width: auto;
 }
+
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
+
 input[type="search"] {
   -webkit-appearance: textfield;
 }
+
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -231,35 +239,40 @@ a {
 
 @font-face {
   font-family: "OpenSans";
-  src: url('../fonts/OpenSans.eot');
-  src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.ttf') format('truetype');
+  src: url("../fonts/OpenSans.eot");
+  src: url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans.woff") format("woff"), url("../fonts/OpenSans.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "OpenSans";
-  src: url('../fonts/OpenSans-Bold.eot');
-  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "OpenSans";
-  src: url('../fonts/OpenSans-Italic.eot');
-  src: url('../fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Italic.woff') format('woff'), url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  src: url("../fonts/OpenSans-Italic.eot");
+  src: url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
+
 @font-face {
   font-family: "OpenSans";
-  src: url('../fonts/OpenSans-BoldItalic.eot');
-  src: url('../fonts/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-BoldItalic.woff') format('woff'), url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+  src: url("../fonts/OpenSans-BoldItalic.eot");
+  src: url("../fonts/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
+
 .footer__container, .header__container, .main__container {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .footer__container:after, .header__container:after, .main__container:after {
   content: " ";
   display: block;
@@ -311,29 +324,39 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-a {
-  color: #00bcd4;
-  text-decoration: none;
-}
-a:visited {
-  color: #00bcd4;
-}
-a:focus {
-  color: #f44336;
-}
-a:hover {
-  color: #008fa1;
-}
-a:active {
-  color: #f44336;
-}
-a:hover, a:focus {
-  text-decoration: underline;
-}
-
 .footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.footer__copyright {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__icon {
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.footer__icon:hover {
+  opacity: 0.8;
+}
+
+.footer__icon--email {
+  background-image: url("../images/sprites.png");
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__icon--github {
+  background-image: url("../images/sprites.png");
+  background-position: -24px 0px;
+  width: 24px;
+  height: 24px;
 }
 
 .header {

@@ -1,13 +1,13 @@
 // regular
-@include font-face('OpenSans', font-files('OpenSans.woff', woff, 'OpenSans.ttf', ttf), 'OpenSans.eot');
+@include font-face('OpenSans', ('../fonts/OpenSans.woff', '../fonts/OpenSans.ttf'), '../fonts/OpenSans.eot');
 
 // bold
-@include font-face('OpenSans', font-files('OpenSans-Bold.woff', woff, 'OpenSans-Bold.ttf', ttf), 'OpenSans-Bold.eot', bold, normal);
+@include font-face('OpenSans', ('../fonts/OpenSans-Bold.woff', '../fonts/OpenSans-Bold.ttf'), '../fonts/OpenSans-Bold.eot', bold, normal);
 
 // italic
-@include font-face('OpenSans', font-files('OpenSans-Italic.woff', woff, 'OpenSans-Italic.ttf', ttf), 'OpenSans-Italic.eot', normal, italic);
+@include font-face('OpenSans', ('../fonts/OpenSans-Italic.woff', '../fonts/OpenSans-Italic.ttf'), '../fonts/OpenSans-Italic.eot', normal, italic);
 
 // bold + italic
-@include font-face('OpenSans', font-files('OpenSans-BoldItalic.woff', woff, 'OpenSans-BoldItalic.ttf', ttf), 'OpenSans-BoldItalic.eot', bold, italic);
+@include font-face('OpenSans', ('../fonts/OpenSans-BoldItalic.woff', '../fonts/OpenSans-BoldItalic.ttf'), '../fonts/OpenSans-BoldItalic.eot', bold, italic);
 
 $open-sans: 'OpenSans', Helvetica, Arial, sans-serif;

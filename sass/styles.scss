@@ -1,12 +1,11 @@
-// Import compass and extensions.
-@import "compass";
+// Import extensions.
 @import "susy";
 @import "breakpoint";
 
-// Import helpers.
-// @import "helpers/sprites";
-@import "helpers/optimize";
+// Reset & normalize CSS.
+@import "reset/optimize";
 
-// Import variable and blocks using globbing.
-@import "variables/**/*";
-@import "blocks/**/*";
+// Import helpers, variable and blocks.
+@import "helpers/*.scss";
+@import "variables/*.scss";
+@import "blocks/**/*.scss";

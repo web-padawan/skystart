@@ -1,38 +1,45 @@
-// sprites with padding
-$icons: sprite-map("icons/*.png", $layout: smart);
+$s-email-x: 0px;
+$s-email-y: 0px;
+$s-email-offset-x: 0px;
+$s-email-offset-y: 0px;
+$s-email-width: 24px;
+$s-email-height: 24px;
+$s-email-total-width: 48px;
+$s-email-total-height: 24px;
+$s-email-image: '../images/sprites.png';
+$s-email: 0px 0px 0px 0px 24px 24px 48px 24px '../images/sprites.png';
+$s-github-x: 24px;
+$s-github-y: 0px;
+$s-github-offset-x: -24px;
+$s-github-offset-y: 0px;
+$s-github-width: 24px;
+$s-github-height: 24px;
+$s-github-total-width: 48px;
+$s-github-total-height: 24px;
+$s-github-image: '../images/sprites.png';
+$s-github: 24px 0px -24px 0px 24px 24px 48px 24px '../images/sprites.png';
 
-// sized sprites
-@mixin image-size($path) {
-  width: image-width($path);
-  height: image-height($path);
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
 }
 
-@mixin sized-sprite($map, $sprite) {
-  background: sprite($map, $sprite) no-repeat;
-  @include image-size(sprite-file($map, $sprite));
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
 }
 
-// shortcut
-@mixin s($sprite, $map: $icons) {
-  background: sprite($map, $sprite) no-repeat;
-  @include image-size(sprite-file($map, $sprite));
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
 }
 
-// only position of sprite, to remove flicker effect in chrome
-@mixin sp($sprite, $map: $icons) {
-  background-position: sprite-position($map, $sprite);
+@mixin sprite-image($sprite) {
+  background-image: url(nth($sprite, 9));
 }
 
-// only image, when dimensions are useless
-@mixin si($sprite, $map: $icons) {
-  background: sprite($map, $sprite) no-repeat;
-}
-
-// insert svg
-@mixin svg($name, $width, $height) {
-  background: url('../img/svg/#{$name}.svg') no-repeat 0 0;
-  @include background-size(#{$width}px #{$height}px);
-  width: #{$width}px;
-  height: #{$height}px;
-  display: inline-block;
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
 }
