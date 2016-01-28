@@ -1,8 +1,13 @@
 .header {
   @include padding-leader;
   @include padding-trailer;
+  text-align: center;
 
   &__container {
     @extend %container;
+  }
+
+  &__title {
+    @include line(10px, $black);
   }
 }

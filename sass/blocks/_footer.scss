@@ -1,6 +1,7 @@
 .footer {
   @include padding-leader;
   @include padding-trailer;
+  text-align: center;
 
   &__container {
     @extend %container;

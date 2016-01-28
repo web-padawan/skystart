@@ -327,6 +327,7 @@ h6 {
 .footer {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 .footer__copyright {
@@ -362,6 +363,36 @@ h6 {
 .header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.header__title {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header__title:before, .header__title:after {
+  background: #000;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  opacity: "1";
+  position: relative;
+  vertical-align: middle;
+  width: 200%;
+  z-index: -1;
+}
+
+.header__title:before {
+  right: 10px;
+  margin: 0 0 0 -200%;
+}
+
+.header__title:after {
+  left: 10px;
+  margin: 0 -200% 0 0;
 }
 
 .main {

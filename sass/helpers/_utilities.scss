@@ -1,0 +1,26 @@
+@mixin line($space, $color: "#fff", $opacity: "1") {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  &:before,
+  &:after {
+    background: $color;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    opacity: $opacity;
+    position: relative;
+    vertical-align: middle;
+    width: 200%;
+    z-index: -1;
+  }
+  &:before {
+    right: $space;
+    margin: 0 0 0 -200%;
+  }
+  &:after {
+    left: $space;
+    margin: 0 -200% 0 0;
+  }
+}

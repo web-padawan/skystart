@@ -1,7 +1,7 @@
 {
   "name": "skystart",
   "description": "Frontend project template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {},
   "license": "MIT",
   "author": "Sergey Kulikov",
@@ -13,6 +13,7 @@
     "gulp": "^3.9.0",
     "gulp-css-globbing": "^0.1.8",
     "gulp-cssnano": "^2.1.0",
+    "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
