@@ -15,6 +15,11 @@ Frontend project template with Sass & Gulp.
 * [SassyStrings](https://github.com/HugoGiraudel/SassyStrings) - useful string functions
 * [Vertical Rhythms](https://github.com/zellwk/vertical-rhythms-without-compass) - an unofficial port of Compass vertical rhythm library
 
+### PostCSS plugins
+
+* [Autoprefixer](https://github.com/postcss/autoprefixer) - a plugin which adds vendor prefixes to CSS rules
+* [CSS MQPacker](https://github.com/hail2u/node-css-mqpacker) - a plugin which combines same CSS media query rules into one media query rule
+
 ### JavaScript libraries
 * [jQuery](https://jquery.com) - a fast, small, and feature-rich JavaScript library
 * [Modernizr](http://modernizr.com) - a JavaScript library that detects HTML5 and CSS3 features in the user’s browser

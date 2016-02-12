@@ -8,6 +8,7 @@ var gulp          = require('gulp'),
     spritesmith   = require('gulp.spritesmith'),
     autoprefixer  = require('autoprefixer'),
     browserSync   = require('browser-sync'),
+    mqpacker      = require('css-mqpacker'),
     path          = require('path');
 
 gulp.task('reload', function() {
@@ -51,7 +52,10 @@ gulp.task('sass', function() {
       outputStyle: 'expanded',
       includePaths: ['./sass', 'node_modules/susy/sass', 'node_modules/breakpoint-sass/stylesheets']
     }))
-    .pipe(postcss([ autoprefixer({ browsers: ['IE >= 9'] }) ]))
+    .pipe(postcss([
+      autoprefixer({ browsers: ['IE >= 9'] }),
+      mqpacker
+    ]))
     .pipe(gulp.dest('css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
